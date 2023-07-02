@@ -1,0 +1,19 @@
+<h1>Serial#new</h1>
+<p>Find me in app/views/serial/new.html.erb</p>
+<%= form_with model: @serial ,url: serial_create_path, method: :post do |form| %>
+    <div>
+    <%= form.label :name, "Nombre de la serie" %>
+        <%= form.text_field :name %>
+    </div>
+    <div>
+    <%= form.label :synopsis, "Sinopspis" %>
+    <%= form.text_field :synopsis %>
+    </div>
+    <div>
+    <%= form.label :director, "Nombre del director" %>
+    <%= form.text_field :director %>
+    </div>
+    <div>
+    <%= form.submit "Guardar" %>
+    </div>
+<%end%>

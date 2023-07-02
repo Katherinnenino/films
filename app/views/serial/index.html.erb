@@ -1,0 +1,9 @@
+<h1>Serial#index</h1>
+<p>Find me in app/views/serial/index.html.erb</p>
+<% @serials.each do |movie| %>
+    <p>Serial: <%= movie.name %></p>
+    <p>Synopsis: <%= movie.synopsis %></p>
+    <p>Director: <%= movie.director %></p>
+<% end %>
+
+<%= @serials.all%>

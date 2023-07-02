@@ -1,0 +1,11 @@
+<h1>Documentary#index</h1>
+<p>Find me in app/views/documentary/index.html.erb</p>
+
+
+
+
+ <% @documentaries.each do |movie| %>
+ <p>Docu: <%= movie.name %></p>
+ <p>Synopsis: <%= movie.synopsis %></p>
+ <p>Director: <%= movie.director %></p>
+<% end %>
